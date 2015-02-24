@@ -767,7 +767,6 @@ RebuildTable(tablePtr)
     register Tcl_HashEntry **oldChainPtr, **newChainPtr;
     register Tcl_HashEntry *hPtr;
     Tcl_HashKeyType *typePtr;
-    VOID *key;
 
     oldSize = tablePtr->numBuckets;
     oldBuckets = tablePtr->buckets;
@@ -797,8 +796,6 @@ RebuildTable(tablePtr)
     for (oldChainPtr = oldBuckets; oldSize > 0; oldSize--, oldChainPtr++) {
 	for (hPtr = *oldChainPtr; hPtr != NULL; hPtr = *oldChainPtr) {
 	    *oldChainPtr = hPtr->nextPtr;
-
-	    key = (VOID *) Tcl_GetHashKey (tablePtr, hPtr);
 
 	    if (typePtr->hashKeyProc == NULL
 		|| typePtr->flags & TCL_HASH_KEY_RANDOMIZE_HASH) {

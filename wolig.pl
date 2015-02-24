@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright (C) 2000-2012 Nadav Har'El, Dan Kenigsberg
+# Copyright (C) 2000-2015 Nadav Har'El, Dan Kenigsberg
 #
 use Carp;
 use FileHandle;
@@ -337,7 +337,9 @@ while(<$fh>){
         if(substr($smichut,-1,1) eq "ה"){
           $smichut=substr($smichut,0,-1);
         }
-        outword $smichut."ehו", "ע,יחיד,של/הוא";
+	unless ($opts{"אין_כינויי_יחיד"}){
+        	outword $smichut."ehו", "ע,יחיד,של/הוא";
+	}
         # TODO: maybe add the "eha" inflection? But it won't generate anything
         # different from the ah below...
         #outword $smichut."eha" unless $no_ah;

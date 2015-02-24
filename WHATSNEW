@@ -1,3 +1,18 @@
+Release 1.3 (February 25, 2015)
+
+ * Some spelling inaccuracies fixed, and 400 base words added.
+
+ * Continued to improve the niqqudless.odt document, which describes (in
+   Hebrew) Hspell's spelling standard. The document is still a draft, but
+   is already over 100 pages, discusses the majority of spelling issues
+   we've encountered while developing Hspell, and is a good place to turn to
+   if you're not sure why Hspell expects you to spell a particular word
+   in a particular way.
+
+ * Vocabulary: 468,508 words (when built with "--enable-fatverb")
+               based on 24495 base words: 12908 nouns, 3889 adjectives,
+               5261 verb stems, and 2437 other words.
+
 Release 1.2 (February 28, 2012)
 
  * Some incorrect words purged or fixed, and 600 base words added.

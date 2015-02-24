@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
                  "# The conversion was carried out in %s\n",
                  HSPELL_VERSION_MAJOR,HSPELL_VERSION_MINOR,HSPELL_VERSION_EXTRA,
                  __DATE__);
-  fprintf(afffp, "# Copyright 2004-2012, Nadav Har'El and Dan Kenigsberg\n");
+  fprintf(afffp, "# Copyright 2004-2015, Nadav Har'El and Dan Kenigsberg\n");
   fprintf(afffp, "# The dictionary (this file and the corresponding word list)\n"
                  "# is licensed under the GNU Affero General Public License\n"
 		 "# (AGPL) version 3.\n");
@@ -196,7 +196,7 @@ int main(int argc, char *argv[])
 
   while ((specifier=fgetc(prefixfp))!= EOF) {
     char word[100];
-    int len, j;
+    int j;
     /* find the specifier place (which infers which aspell rule apply to its
      * word) */
     for(i=0; (i<already_seen) && (seen_specifiers[i]!=specifier) ; i++);

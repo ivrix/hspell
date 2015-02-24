@@ -1,4 +1,4 @@
-/* Copyright (C) 2003-2012 Nadav Har'El and Dan Kenigsberg */
+/* Copyright (C) 2003-2015 Nadav Har'El and Dan Kenigsberg */
 
 /* This header file defines the Hspell Hebrew spellchecking API in C, as
    implemented by the libhspell.a library.
@@ -12,7 +12,7 @@
    API this header file supports. Note that this API might change.
 */
 #define HSPELL_VERSION_MAJOR 1
-#define HSPELL_VERSION_MINOR 2
+#define HSPELL_VERSION_MINOR 3
 #define HSPELL_VERSION_EXTRA ""
 
 

@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright (C) 2000-2010 Nadav Har'El, Dan Kenigsberg
+# Copyright (C) 2000-2015 Nadav Har'El, Dan Kenigsberg
 #
 use Carp;
 
@@ -391,10 +391,9 @@ sub output_infinitive() {
 
     # nakey p"n
     if (($w->{q} eq 'נ' || $w->{q} eq 'י' && $w->{t} eq 'צ') &&
-	   !${$w->{opts}}{"שמור_פנ"} &&
-	   $w->{t} !~ m/[רעהאח]/o) { # non guttural ayin-poal!
+	   !${$w->{opts}}{"שמור_פנ"} ) {
       $w->{mishqal} =~ s/q//o if $w->{binyan} =~ m/[$hiqtil$huqtal]/o &&
-		$w->{t} !~ m/^[יו]$/o;
+		$w->{t} !~ m/^[יורעהאח]$/o;
       # REM: this special niqtal behavior is based on my personal feeling only
       $w->{mishqal} =~ s/q/י/o if $w->{binyan} eq $niqtal;
     }

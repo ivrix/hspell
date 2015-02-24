@@ -1,4 +1,4 @@
-/* Copyright (C) 2003-2012 Nadav Har'El and Dan Kenigsberg */
+/* Copyright (C) 2003-2015 Nadav Har'El and Dan Kenigsberg */
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -341,7 +341,7 @@ main(int argc, char *argv[])
 			break;
 		case 'V':
 			printf("Hspell %d.%d%s\nWritten by Nadav Har'El and "
-			       "Dan Kenigsberg.\n\nCopyright (C) 2000-2012 "
+			       "Dan Kenigsberg.\n\nCopyright (C) 2000-2015 "
 			       "Nadav Har'El and Dan Kenigsberg.\nThis is "
 			       "free software, released under the GNU Affero General "
 			       "Public License\n(AGPL) version 3. See "
@@ -581,8 +581,9 @@ main(int argc, char *argv[])
 			int  isheb = 0;
 
 			/* Read rest of line, to get the command parameters. */
-			fgets(rest, sizeof(rest), in);
-			if (rest[strlen(rest)-1] == '\n') {
+			if(!fgets(rest, sizeof(rest), in)){
+				rest[0]='\0'; /* unexpected EOF... */
+			} else if (rest[0] && rest[strlen(rest)-1] == '\n') {
 				rest[strlen(rest)-1] = '\0';
 			} else {
 				/* We shouldn't arrive here, but if we do:

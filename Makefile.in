@@ -1,5 +1,5 @@
 # Hspell Makefile
-# Copyright (C) 2002-2012 Nadav Har'El and Dan Kenigsberg
+# Copyright (C) 2002-2015 Nadav Har'El and Dan Kenigsberg
 
 # A comment about parallel make:
 # Unfortunately, parallel make deals with rules with multiple targets in a way
@@ -272,7 +272,9 @@ dolinginfo: linginfo_data $(HSPELL_EXECUTABLE)
 
 linginfo_data: hebrew.wgz.stems
 hebrew.wgz.stems: binarize-desc.pl PrefixBits.pl pack-desc.pl $(HIFS) find_sizes
-	cat $(HIFS) | $(PERL) binarize-desc.pl | \
+	for hif in $(HIFS); do \
+	cat $$hif; echo ---; done | \
+	$(PERL) binarize-desc.pl | \
 		sort -u | $(PERL) pack-desc.pl -p hebrew.wgz.prefixes.tmp \
 		-d hebrew.wgz.desc.tmp -s hebrew.wgz.stems.tmp \
 		-l hebrew.wgz.lingsizes.tmp | \

@@ -1,4 +1,4 @@
-This is version 1.2 of Hspell, the free Hebrew spellchecker and morphology
+This is version 1.3 of Hspell, the free Hebrew spellchecker and morphology
 engine.
 
 You can get Hspell from:
@@ -27,11 +27,12 @@ About Hspell's spelling standard
 
 Hspell was designed to be 100% and strictly compliant with the official
 niqqud-less spelling rules ("Ha-ktiv Khasar Ha-niqqud", colloquially known as
-"Ktiv Male") published by the Academy of the Hebrew Language. This is both an
-advantage and a disadvantage, depending on your viewpoint. It's an advantage
-because it encourages a *correct* and consistent spelling style throughout
-your writing. It is a disadvantage, because a few of the Academia's official
-spelling decisions are relatively unknown to the general public.
+"Ktiv Male", or "plene spelling" in English), published by the Academy of
+the Hebrew Language. This is both an advantage and a disadvantage, depending
+on your viewpoint. It's an advantage because it encourages a *correct* and
+consistent spelling style throughout your writing. It is a disadvantage,
+because a few of the Academia's official spelling decisions are relatively
+unknown to the general public.
 
 Users of Hspell (and all Hebrew writers, for that matter) are encouraged to
 read the Academia's official niqqud-less spelling rules (which are printed at
@@ -40,8 +41,6 @@ dictionaries which use the niqqud-less spelling (such as Millon Ha-hove or
 Rav Milim). We also provide in docs/niqqudless.odt a document (in Hebrew)
 which describes in detail Hspell's spelling standard, and why certain words
 are spelled the way they are.
-
-Future releases may include an option for alternative spelling standards.
 
 
 The technology behind Hspell
