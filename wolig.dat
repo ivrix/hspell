@@ -1,5 +1,5 @@
 # Wolig (WOrdLIst Generator) data file
-# Copyright (C) 2000-2015 Nadav Har'El, Dan Kenigsberg
+# Copyright (C) 2000-2017 Nadav Har'El, Dan Kenigsberg
 #
 # This file lists base nouns and adjectives in Hebrew, from which the
 # "wordlist generator" program wolig.pl builds the complete list of inflected
@@ -153,7 +153,7 @@
 #
 #* This file was generated automatically from original data prepared by the
 #* Hspell project (http://hspell.ivrix.org.il/).
-#* Copyright (C) 2000-2015 Nadav Har'El, Dan Kenigsberg
+#* Copyright (C) 2000-2017 Nadav Har'El, Dan Kenigsberg
 #* This file, like the rest of Hspell, is licensed under the GNU Affero General
 #* Public License (AGPL) version 3.
 
@@ -1285,6 +1285,7 @@
 מאופק ת,נקבה_ת
 מצולק ת,נקבה_ת
 מרופט ת,נקבה_ת
+מרופש ת,נקבה_ת
 ממותק ת,נקבה_ת
 מעופש ת,נקבה_ת
 ממושך ת,נקבה_ת
@@ -2063,11 +2064,12 @@
 אימונית ע
 זיבורית ע,יחיד
 איתורית ע # Pager. Note that איתורית is a tradmark, but commonly used as generic.
+זימונית ע
 הילולה ע
 # shortened form of מלקח, לקיחה, used in phrases like מיקח וממכר, עמד על המיקח.
 # The form מקח (segol) is considered wrong by [3] but accepted by ravmilim and
-# according to a decision on the Academia's site, is now considered a correct
-# alternative spelling by the Academia.
+# according to a decision on the Academia's site (also in academia meeting
+# 255), is now considered a correct alternative spelling by the Academia.
 מיקח ע,אין_נטיות
 מקח ע,אין_נטיות
 
@@ -2104,6 +2106,7 @@
 # words with o sound that got an extra vav in ktiv male:
 מכוער ת,נקבה_ת
 מגורר ת,נקבה_ת
+מגורד ת,נקבה_ת
 מחורץ ת,נקבה_ת
 מפורד ת,נקבה_ת
 מבוהל ת,נקבה_ת
@@ -2773,6 +2776,7 @@
 גפרית ע,אין_נטיות
 נכרי ת,נקבה_ה,נקבה_ת # [4] acknowledges that this is the standard spelling but says that it still prefers to spell נוכרי
 נכריות ע
+הפכי ת # [4] says this is is old spelling, new spelling is הופכי with cholam male.
 # Note: the plural smichut of צוהר is צוהרי- (vav for kamats katan that
 # originates in cholam chaser).
 # This is not the correct inflection of the supposed יים plural, צהריים,
@@ -3022,6 +3026,7 @@
 כפיפה ע
 יציבה ע
 כבידה ע,יחיד
+כבידתי ת
 קרישה ע # gerund of קורש - the verb is archaic, but the gerund is very useful, especially for blood clotting.
 מחילה ע # סליחה
 גרידה ע
@@ -3041,6 +3046,7 @@
 בלילה ע
 פצירה ע
 קרינה ע
+קרינתי ת
 לביבה ע
 לביאה ע
 כתיתה ע # שניצל
@@ -3584,6 +3590,7 @@
 עצב ע
 עצבי ת
 שלב ע
+שרך ע
 אולם ע,ות,ים
 מוסך ע
 מוסכניק ת,נקבה_ית # called colloquial by [3] and [4]
@@ -4324,6 +4331,7 @@
 מעוט ת # As in the phrase מעוטי יכולת
 שתום ת # Only in the phrase שתום עין. In the bible meant "open" but later, following סתום, became to mean one eye is closed.
 שתוק ת # literary - silent
+לבוד ת # archaic
 שתוקי ת # Judaism - person with unknown father
 צרוי ת # has צירי niqqud. Mostly used in feminine, because letter names are feminine.
 מצוי ת
@@ -4934,6 +4942,7 @@
 שועלה ע
 נופר ע # water lily. Note that [3] and [4] write this with shuruk, but popular pronunciation (especially as a girl's name) is with cholam.
 סימן ע
+סימנית ע
 אפיקומן ע
 תירס ע # usually pronounced in מלעיל..
 סידן ע,אין_נטיות
@@ -5043,12 +5052,7 @@
 חציוני ת # Not recognized by [3], or [4], but in common use.
 המנון ע,ות,ים # [3] says only ים, [1] mentions ות as a possible alternative. see also: הימנון
 #הימנון ע,ות,ים # Strangely, [2] says הימנון has yod (and allows both ות and ים). [3] and [1] and Rav-Milim all disagree, and only list המנון. TODO: consider dropping this word.
-# [2] and [3] list קלשון with dagesh in lamed, and therefore an added yod.
-# But [1] and Rav-Millim list קלשון without dagesh in lamed! Which one is
-# correct?
-# TODO: see also "כללי נטיית השם", page 184 - they say the dagesh is the correct one. We should accept only this form.
-#קלשון ע,ות,ים
-קילשון ע,ות,ים
+קלשון ע,ות,ים
 צביון ע,יחיד # [1] prefers ים over ות. [2] and [3] say there is no plural.
 גלשון ע
 כפתור ע
@@ -5619,12 +5623,13 @@
 # use ים. The dictionaries are inconsistent about this, sometimes allowing
 # both forms, sometimes (especially [3]) insisting on the ות that is never
 # used in practice, and sometimes ([4]) insisting on the "unofficial" ים.
+# In 2016, the Academy decided officially to accept פמוטים, פגושים, פשושים.
 פעוט ע,ות # with cholam (baby)
 פעוטה ע
 ממון ע,ות
 ממוני ת # in [4], but not in [3].
 חמוס ע # (with cholam) a kind of animal
-פגוש ע,ות,ים # ות is the official plural; [1], [4] (and common usage) also recognize ים
+פגוש ע,ות,ים # ות is the official plural; [1], [4] (and common usage) also recognize ים. Since 2016, ים also got the official stamp.
 כרוז ע,ות # כרוז with kamats
 לקוח ע,ות
 לקוחה ע
@@ -7251,6 +7256,7 @@
 טרפה ע
 פרדה ע # note that [3] prefers פרידה, with chirik maleh, but also allows the form with tsere.
 בררה ע
+מררה ע
 צנפה ע
 שפלה ע
 דלקה ע
@@ -7416,6 +7422,7 @@
 מזלג ע,ות  # [1] says ים, but [3] and common usage dictate ים.
 מזלף ע
 משפך ע
+מבלט ע
 מצנם ע
 מצנן ע # radiator
 פסנתר ע
@@ -7881,6 +7888,7 @@
 שפמפם ע
 גברבר ע # note dagesh kal in second bet.
 זנבנב ע
+אהבהב ע,אין_יחיד # אהבהבים
 
 אמצע ע
 אמצעות ע
@@ -9742,6 +9750,7 @@
 אמודאות ע,יחיד
 דבוראי ע # A word invented in 2005 by bee-keepers to replace כוורן but never accepted by the Academia.
 דבוראית ע
+דבוראות ע,יחיד
 #the possesions of זכאי, רשאי, aren't useful.
 זכאי ע,אין_כינויים
 זכאית ע,אין_כינויים
@@ -10366,6 +10375,8 @@
 גנון ע
 מסור ע
 מסוע ע
+מכוש ע # note מכוש and מקוש have different meanings
+מקוש ע
 
 בבואה ע
 
@@ -10391,6 +10402,7 @@
 סיני ת,עם
 ירדני ת,עם
 עיראקי ת,עם
+בגדאדי ת,עם
 איראני ת,עם
 סודאני ת,עם
 עומאני ת,עם
@@ -11378,6 +11390,8 @@
 פסיכופתיה ע,אין_כינויים
 סוציופת ת,נקבה_ית
 סוציופתי ת
+סוציופתיה ע,אין_כינויים
+סייבר ע,אין_נטיות
 
 ביולוג ת,נקבה_ית
 ביולוגי ת
@@ -12341,6 +12355,7 @@
 היסטוריוגרפיה ע,אין_נטיות
 היפודרום ע
 היפופוטם ע
+אנופלס ע
 היפנוזה ע
 היפנוטי ת
 היפראקטיבי ת
@@ -12409,6 +12424,7 @@
 אקזיסטנציאליזם ע,אין_נטיות
 אקזיסטנציאליסטי ת
 אקזיסטנציאליסט ת,נקבה_ית
+אקזיסטנציאלי ת
 
 דרוויניזם ע,אין_נטיות
 דרוויניסט ת,נקבה_ית
@@ -14320,7 +14336,7 @@
 מקסימום ע # TODO: the Academia also alows the plural מקסימאות (mentioned in a decision on their site).
 מקסימלי ת
 מקסימיזציה ע,יחיד,אין_כינויים # Usually only used in math context
-טקסטיל ע,אין_נטיות
+טקסטיל ע
 טקסט ע
 טקסטואלי ת
 
@@ -15622,6 +15638,7 @@
 מצליחנות ע,יחיד # called "colloquial" by [4]
 מצליחני ת # called "colloquial" by [4]
 משקיען ת,נקבה_ית # called "colloquial" by [4]
+משקיענות ע,יחיד
 משחקון ע # in tennis
 משפחתון ע
 סיבית ע # bit. Note added yod for ktiv male and dagesh in bet!
@@ -15830,6 +15847,7 @@
 פיקושנייה ע,אין_כינויים
 פמטושנייה ע,אין_כינויים
 סילאן ע,אין_נטיות
+טסטר ע,אין_כינויים
 
 ##############################################################################
 # Acronyms.
@@ -15881,6 +15899,7 @@
 מזה"ת ע,אין_נטיות,זכר
 אדמו"ר ע
 מוכ"ז ע,אין_נטיות
+יח"צ ע,אין_נטיות
 יחצ"ן ע # see also יחצן, without rashi-tevot.
 יחצ"נית ע
 יחצ"נות ע,יחיד

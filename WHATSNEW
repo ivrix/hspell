@@ -1,3 +1,22 @@
+Release 1.4 (June 24, 2017)
+
+ * This month, the Academy of the Hebrew Language published a new version
+   of their niqqud-less spelling standard, with some important changes from
+   the old rules - mostly adding yod and waw in additional places.
+   This version of Hspell will be the last one following the previous
+   spelling standard. The next release will be named "2.0" and will follow
+   the new spelling standard.
+
+ * The niqqudless.odt document, which describes (in Hebrew) Hspell's
+   spelling standard, is finally complete at 110 pages. There is still room
+   for improvement and more content to expect in the next releases, but the
+   current document no longer has any major holes, and discusses the majority
+   of spelling issues that we've encountered while developing Hspell.
+
+ * Vocabulary: 469,509 words (when built with "--enable-fatverb")
+               based on 24534 base words: 12929 nouns, 3897 adjectives,
+               5269 verb stems, and 2439 other words.
+
 Release 1.3 (February 25, 2015)
 
  * Some spelling inaccuracies fixed, and 400 base words added.

@@ -1,4 +1,4 @@
-/* Copyright (C) 2003-2015 Nadav Har'El and Dan Kenigsberg */
+/* Copyright (C) 2003-2017 Nadav Har'El and Dan Kenigsberg */
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -341,7 +341,7 @@ main(int argc, char *argv[])
 			break;
 		case 'V':
 			printf("Hspell %d.%d%s\nWritten by Nadav Har'El and "
-			       "Dan Kenigsberg.\n\nCopyright (C) 2000-2015 "
+			       "Dan Kenigsberg.\n\nCopyright (C) 2000-2017 "
 			       "Nadav Har'El and Dan Kenigsberg.\nThis is "
 			       "free software, released under the GNU Affero General "
 			       "Public License\n(AGPL) version 3. See "

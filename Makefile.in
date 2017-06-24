@@ -34,6 +34,11 @@ LC_ALL=C
 LC_CTYPE=C
 LC_COLLATE=C
 
+# If making one of the intermediate targets failed in the middle delete it,
+# so the partially built output file doesn't look like a legitimate file
+# on the next "make" run.
+.DELETE_ON_ERROR:
+
 @SET_MAKE@
 
 # build and installation paths
@@ -145,7 +150,7 @@ install: all
 ################################################
 # for creating an hspell distribution tar
 PACKAGE = hspell
-VERSION = 1.2
+VERSION = 1.4
 DISTFILES = COPYING INSTALL LICENSE README WHATSNEW \
 	Makefile.in stats wunzip.c wzip \
 	hspell.1 \
@@ -159,7 +164,7 @@ DISTFILES = COPYING INSTALL LICENSE README WHATSNEW \
 	hash.h tclHash.c tclHash.h \
         binarize-desc.pl pack-desc.pl linginfo.c linginfo.h \
 	multispell hspell.3 mk_he_affix.c configure.in configure \
-	misc/Copyright misc/install.rdf.pre specfilter.c \
+	misc/install.rdf.pre specfilter.c \
 	doc/niqqudless.odt test/test1 test/test1.dat
 
 DISTDIR = $(PACKAGE)-$(VERSION)

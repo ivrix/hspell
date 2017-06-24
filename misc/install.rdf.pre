@@ -30,6 +30,7 @@
     <em:creator>Nadav Har'El and Dan Kenigsberg</em:creator>
     <em:homepageURL>http://hspell.ivrix.org.il/</em:homepageURL>
     <em:unpack>true</em:unpack>
+    <em:type>64</em:type>
     <em:localized>
       <Description>
         <em:locale>he-IL</em:locale>

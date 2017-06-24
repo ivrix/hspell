@@ -89,11 +89,9 @@ int main(int argc, char *argv[])
 
   fprintf(afffp, "# This file was generated automatically from data prepared\n"
                  "# by the Hspell project (http://hspell.ivrix.org.il/).\n"
-                 "# Hspell version %d.%d%s was used.\n"
-                 "# The conversion was carried out in %s\n",
-                 HSPELL_VERSION_MAJOR,HSPELL_VERSION_MINOR,HSPELL_VERSION_EXTRA,
-                 __DATE__);
-  fprintf(afffp, "# Copyright 2004-2015, Nadav Har'El and Dan Kenigsberg\n");
+                 "# Hspell version %d.%d%s was used.\n",
+                 HSPELL_VERSION_MAJOR,HSPELL_VERSION_MINOR,HSPELL_VERSION_EXTRA);
+  fprintf(afffp, "# Copyright 2004-2017, Nadav Har'El and Dan Kenigsberg\n");
   fprintf(afffp, "# The dictionary (this file and the corresponding word list)\n"
                  "# is licensed under the GNU Affero General Public License\n"
 		 "# (AGPL) version 3.\n");
